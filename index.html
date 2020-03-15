@@ -31,7 +31,7 @@
 
         .loader_round {
             width: 5px;
-            height: 5px;
+            height: 50px;
             border-radius: 50%;
             position: absolute;
             background: #ccc;
@@ -45,14 +45,7 @@
             animation: 3s ease-in-out infinite moveround2;
         }
 
-        .round3 {
-            animation: 3s ease-in-out infinite moveround3;
-        }
-
-        .round4 {
-            animation: 3s ease-in-out infinite moveround4;
-        }
-
+      
         @keyframes moveround1 {
             0% {
                 left: 0px;
@@ -107,59 +100,7 @@
             }
         }
 
-        @keyframes moveround3 {
-            0% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
-            }
-
-            25% {
-                left: 0px;
-                top: calc(100% - 5px);
-            }
-
-            50% {
-                left: 0px;
-                top: 0px;
-            }
-
-            75% {
-                left: calc(100% - 5px);
-                top: 0px;
-            }
-
-            100% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
-            }
-        }
-
-        @keyframes moveround4 {
-            0% {
-                left: 0px;
-                top: calc(100% - 5px);
-            }
-
-            25% {
-                left: 0px;
-                top: 0px;
-            }
-
-            50% {
-                left: calc(100% - 5px);
-                top: 0px;
-            }
-
-            75% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
-            }
-
-            100% {
-                left: 0px;
-                top: calc(100% - 5px);
-            }
-        }
+       
 
         @keyframes textZoomInOut {
             0% {
@@ -189,8 +130,6 @@
     <span class="loader_text">LOADING</span>
     <div class="loader_round round1"></div>
     <div class="loader_round round2"></div>
-    <div class="loader_round round3"></div>
-    <div class="loader_round round4"></div>
 </div>
 </body>
 </html>

@@ -12,14 +12,19 @@
             align-items: center;
             justify-content: center;
         }
+            
 
         .loader {
             width: 100px;
             height: 100px;
-            position: relative;
+           /* position: relative;*/
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+             left: 315px;
+             top: 143px;
         }
 
         .loader_text {
@@ -27,19 +32,27 @@
             font-size: 15px;
             color: #fafafa;
             animation: 3s ease-in-out infinite textZoomInOut;
+            border-radius: 50%;
         }
 
         .loader_round {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            position: absolute;
+           
+		background: black;
+		display: block;
+		width: 15%;
+		height: 15%;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0);
+		transform-origin: (0,160 px);
+
 
         }
 
         .round1 {
             background: red;
-            animation: 1s ease-in-out infinite effect-4-1;
+            animation: effect-4-1 1.5s infinite linear;
         }
 
         .round2 {
@@ -57,12 +70,8 @@
             animation: 4s ease-in-out infinite effect-4-1;
         }
 @keyframes effect-4-1 {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+    from { -webkit-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
 }
 
   /*      @keyframes moveround1 {
